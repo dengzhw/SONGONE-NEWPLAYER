@@ -10,11 +10,37 @@
 		04F28EB419EFB3FA00613E4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EB319EFB3FA00613E4C /* main.m */; };
 		04F28EB719EFB3FA00613E4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EB619EFB3FA00613E4C /* AppDelegate.m */; };
 		04F28EBA19EFB3FA00613E4C /* NewUPNP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EB819EFB3FA00613E4C /* NewUPNP.xcdatamodeld */; };
-		04F28EBD19EFB3FA00613E4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EBC19EFB3FA00613E4C /* ViewController.m */; };
-		04F28EC019EFB3FA00613E4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F28EBE19EFB3FA00613E4C /* Main.storyboard */; };
 		04F28EC219EFB3FA00613E4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F28EC119EFB3FA00613E4C /* Images.xcassets */; };
-		04F28EC519EFB3FA00613E4C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F28EC319EFB3FA00613E4C /* LaunchScreen.xib */; };
 		04F28ED119EFB3FB00613E4C /* NewUPNPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28ED019EFB3FB00613E4C /* NewUPNPTests.m */; };
+		04F28F0F19EFB4FE00613E4C /* LocalIpodAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EDB19EFB4FE00613E4C /* LocalIpodAudio.m */; };
+		04F28F1019EFB4FE00613E4C /* LocalPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EDD19EFB4FE00613E4C /* LocalPlay.m */; };
+		04F28F1219EFB4FE00613E4C /* PlayAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EE019EFB4FE00613E4C /* PlayAudio.m */; };
+		04F28F1319EFB4FE00613E4C /* PlayList.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EE219EFB4FE00613E4C /* PlayList.m */; };
+		04F28F1419EFB4FE00613E4C /* PositionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EE419EFB4FE00613E4C /* PositionInfo.m */; };
+		04F28F1519EFB4FE00613E4C /* RemotePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EE619EFB4FE00613E4C /* RemotePlay.m */; };
+		04F28F1619EFB4FE00613E4C /* RemoteServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EE819EFB4FE00613E4C /* RemoteServer.m */; };
+		04F28F1719EFB4FE00613E4C /* RenderingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EEA19EFB4FE00613E4C /* RenderingControl.m */; };
+		04F28F1819EFB4FE00613E4C /* ServiceContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EEC19EFB4FE00613E4C /* ServiceContent.m */; };
+		04F28F1919EFB4FE00613E4C /* SOAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EEE19EFB4FE00613E4C /* SOAlbum.m */; };
+		04F28F1A19EFB4FE00613E4C /* SOArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EF019EFB4FE00613E4C /* SOArtist.m */; };
+		04F28F1B19EFB4FE00613E4C /* SOAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EF219EFB4FE00613E4C /* SOAudio.m */; };
+		04F28F1C19EFB4FE00613E4C /* SOAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EF419EFB4FE00613E4C /* SOAudioPlayer.m */; };
+		04F28F1D19EFB4FE00613E4C /* SOAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EF619EFB4FE00613E4C /* SOAVPlayer.m */; };
+		04F28F1E19EFB4FE00613E4C /* SOKVMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EF919EFB4FE00613E4C /* SOKVMode.m */; };
+		04F28F1F19EFB4FE00613E4C /* SOVMediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EFB19EFB4FE00613E4C /* SOVMediaPlayer.m */; };
+		04F28F2019EFB4FE00613E4C /* DeviceRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28EFE19EFB4FE00613E4C /* DeviceRender.m */; };
+		04F28F2119EFB4FE00613E4C /* DeviceService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28F0019EFB4FE00613E4C /* DeviceService.m */; };
+		04F28F2219EFB4FE00613E4C /* SSDP.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28F0219EFB4FE00613E4C /* SSDP.m */; };
+		04F28F2319EFB4FE00613E4C /* SSDPDeviceSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28F0419EFB4FE00613E4C /* SSDPDeviceSearch.m */; };
+		04F28F2419EFB4FE00613E4C /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28F0619EFB4FE00613E4C /* XMLDictionary.m */; };
+		04F28F2519EFB4FE00613E4C /* upnpAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28F0819EFB4FE00613E4C /* upnpAction.m */; };
+		04F28F2619EFB4FE00613E4C /* upnpDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28F0A19EFB4FE00613E4C /* upnpDeviceManager.m */; };
+		04F28F2719EFB4FE00613E4C /* UpnpHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28F0C19EFB4FE00613E4C /* UpnpHelper.m */; };
+		04F28F2819EFB4FE00613E4C /* upnpServiceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28F0E19EFB4FE00613E4C /* upnpServiceInfo.m */; };
+		04F28F2F19EFB53600613E4C /* libffmpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F28F2E19EFB53600613E4C /* libffmpeg.a */; };
+		04F28F3519EFB54C00613E4C /* AVTansport.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28F3119EFB54C00613E4C /* AVTansport.m */; };
+		04F28F3619EFB54C00613E4C /* CommonHelperManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28F3319EFB54C00613E4C /* CommonHelperManager.m */; };
+		04F28F3919EFB56C00613E4C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F28F3819EFB56C00613E4C /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +60,73 @@
 		04F28EB519EFB3FA00613E4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04F28EB619EFB3FA00613E4C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		04F28EB919EFB3FA00613E4C /* NewUPNP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewUPNP.xcdatamodel; sourceTree = "<group>"; };
-		04F28EBB19EFB3FA00613E4C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		04F28EBC19EFB3FA00613E4C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		04F28EBF19EFB3FA00613E4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04F28EC119EFB3FA00613E4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		04F28EC419EFB3FA00613E4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		04F28ECA19EFB3FB00613E4C /* NewUPNPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewUPNPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F28ECF19EFB3FB00613E4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04F28ED019EFB3FB00613E4C /* NewUPNPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewUPNPTests.m; sourceTree = "<group>"; };
+		04F28EDB19EFB4FE00613E4C /* LocalIpodAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalIpodAudio.m; sourceTree = "<group>"; };
+		04F28EDC19EFB4FE00613E4C /* LocalPlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalPlay.h; sourceTree = "<group>"; };
+		04F28EDD19EFB4FE00613E4C /* LocalPlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalPlay.m; sourceTree = "<group>"; };
+		04F28EDF19EFB4FE00613E4C /* PlayAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayAudio.h; sourceTree = "<group>"; };
+		04F28EE019EFB4FE00613E4C /* PlayAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayAudio.m; sourceTree = "<group>"; };
+		04F28EE119EFB4FE00613E4C /* PlayList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayList.h; sourceTree = "<group>"; };
+		04F28EE219EFB4FE00613E4C /* PlayList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayList.m; sourceTree = "<group>"; };
+		04F28EE319EFB4FE00613E4C /* PositionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionInfo.h; sourceTree = "<group>"; };
+		04F28EE419EFB4FE00613E4C /* PositionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionInfo.m; sourceTree = "<group>"; };
+		04F28EE519EFB4FE00613E4C /* RemotePlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemotePlay.h; sourceTree = "<group>"; };
+		04F28EE619EFB4FE00613E4C /* RemotePlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemotePlay.m; sourceTree = "<group>"; };
+		04F28EE719EFB4FE00613E4C /* RemoteServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteServer.h; sourceTree = "<group>"; };
+		04F28EE819EFB4FE00613E4C /* RemoteServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteServer.m; sourceTree = "<group>"; };
+		04F28EE919EFB4FE00613E4C /* RenderingControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderingControl.h; sourceTree = "<group>"; };
+		04F28EEA19EFB4FE00613E4C /* RenderingControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenderingControl.m; sourceTree = "<group>"; };
+		04F28EEB19EFB4FE00613E4C /* ServiceContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceContent.h; sourceTree = "<group>"; };
+		04F28EEC19EFB4FE00613E4C /* ServiceContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceContent.m; sourceTree = "<group>"; };
+		04F28EED19EFB4FE00613E4C /* SOAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAlbum.h; sourceTree = "<group>"; };
+		04F28EEE19EFB4FE00613E4C /* SOAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAlbum.m; sourceTree = "<group>"; };
+		04F28EEF19EFB4FE00613E4C /* SOArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOArtist.h; sourceTree = "<group>"; };
+		04F28EF019EFB4FE00613E4C /* SOArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOArtist.m; sourceTree = "<group>"; };
+		04F28EF119EFB4FE00613E4C /* SOAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAudio.h; sourceTree = "<group>"; };
+		04F28EF219EFB4FE00613E4C /* SOAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAudio.m; sourceTree = "<group>"; };
+		04F28EF319EFB4FE00613E4C /* SOAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAudioPlayer.h; sourceTree = "<group>"; };
+		04F28EF419EFB4FE00613E4C /* SOAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAudioPlayer.m; sourceTree = "<group>"; };
+		04F28EF519EFB4FE00613E4C /* SOAVPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAVPlayer.h; sourceTree = "<group>"; };
+		04F28EF619EFB4FE00613E4C /* SOAVPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAVPlayer.m; sourceTree = "<group>"; };
+		04F28EF719EFB4FE00613E4C /* SODefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SODefine.h; path = ../SODefine.h; sourceTree = "<group>"; };
+		04F28EF819EFB4FE00613E4C /* SOKVMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOKVMode.h; sourceTree = "<group>"; };
+		04F28EF919EFB4FE00613E4C /* SOKVMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOKVMode.m; sourceTree = "<group>"; };
+		04F28EFA19EFB4FE00613E4C /* SOVMediaPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOVMediaPlayer.h; sourceTree = "<group>"; };
+		04F28EFB19EFB4FE00613E4C /* SOVMediaPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOVMediaPlayer.m; sourceTree = "<group>"; };
+		04F28EFD19EFB4FE00613E4C /* DeviceRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceRender.h; path = SSDPLib/DeviceRender.h; sourceTree = "<group>"; };
+		04F28EFE19EFB4FE00613E4C /* DeviceRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceRender.m; path = SSDPLib/DeviceRender.m; sourceTree = "<group>"; };
+		04F28EFF19EFB4FE00613E4C /* DeviceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceService.h; path = SSDPLib/DeviceService.h; sourceTree = "<group>"; };
+		04F28F0019EFB4FE00613E4C /* DeviceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceService.m; path = SSDPLib/DeviceService.m; sourceTree = "<group>"; };
+		04F28F0119EFB4FE00613E4C /* SSDP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDP.h; sourceTree = "<group>"; };
+		04F28F0219EFB4FE00613E4C /* SSDP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDP.m; sourceTree = "<group>"; };
+		04F28F0319EFB4FE00613E4C /* SSDPDeviceSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDPDeviceSearch.h; sourceTree = "<group>"; };
+		04F28F0419EFB4FE00613E4C /* SSDPDeviceSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDPDeviceSearch.m; sourceTree = "<group>"; };
+		04F28F0519EFB4FE00613E4C /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		04F28F0619EFB4FE00613E4C /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		04F28F0719EFB4FE00613E4C /* upnpAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = upnpAction.h; sourceTree = "<group>"; };
+		04F28F0819EFB4FE00613E4C /* upnpAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = upnpAction.m; sourceTree = "<group>"; };
+		04F28F0919EFB4FE00613E4C /* upnpDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = upnpDeviceManager.h; sourceTree = "<group>"; };
+		04F28F0A19EFB4FE00613E4C /* upnpDeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = upnpDeviceManager.m; sourceTree = "<group>"; };
+		04F28F0B19EFB4FE00613E4C /* UpnpHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpnpHelper.h; sourceTree = "<group>"; };
+		04F28F0C19EFB4FE00613E4C /* UpnpHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpnpHelper.m; sourceTree = "<group>"; };
+		04F28F0D19EFB4FE00613E4C /* upnpServiceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = upnpServiceInfo.h; sourceTree = "<group>"; };
+		04F28F0E19EFB4FE00613E4C /* upnpServiceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = upnpServiceInfo.m; sourceTree = "<group>"; };
+		04F28F2A19EFB52D00613E4C /* VMediaPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VMediaPlayer.h; sourceTree = "<group>"; };
+		04F28F2B19EFB52D00613E4C /* VMediaPlayerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VMediaPlayerDelegate.h; sourceTree = "<group>"; };
+		04F28F2C19EFB52D00613E4C /* VPlayerManageDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VPlayerManageDef.h; sourceTree = "<group>"; };
+		04F28F2D19EFB52D00613E4C /* VSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSingleton.h; sourceTree = "<group>"; };
+		04F28F2E19EFB53600613E4C /* libffmpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libffmpeg.a; sourceTree = "<group>"; };
+		04F28F3019EFB54C00613E4C /* AVTansport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVTansport.h; sourceTree = "<group>"; };
+		04F28F3119EFB54C00613E4C /* AVTansport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVTansport.m; sourceTree = "<group>"; };
+		04F28F3219EFB54C00613E4C /* CommonHelperManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHelperManager.h; sourceTree = "<group>"; };
+		04F28F3319EFB54C00613E4C /* CommonHelperManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonHelperManager.m; sourceTree = "<group>"; };
+		04F28F3419EFB54C00613E4C /* LocalIpodAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalIpodAudio.h; sourceTree = "<group>"; };
+		04F28F3719EFB56C00613E4C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		04F28F3819EFB56C00613E4C /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		04F28F4119EFBC9E00613E4C /* VDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F28F2F19EFB53600613E4C /* libffmpeg.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +151,8 @@
 		04F28EA519EFB3FA00613E4C = {
 			isa = PBXGroup;
 			children = (
+				04F28F2919EFB50A00613E4C /* ThirdPartLib */,
+				04F28EDA19EFB4EF00613E4C /* upnp */,
 				04F28EB019EFB3FA00613E4C /* NewUPNP */,
 				04F28ECD19EFB3FB00613E4C /* NewUPNPTests */,
 				04F28EAF19EFB3FA00613E4C /* Products */,
@@ -83,13 +171,12 @@
 		04F28EB019EFB3FA00613E4C /* NewUPNP */ = {
 			isa = PBXGroup;
 			children = (
+				04F28EF719EFB4FE00613E4C /* SODefine.h */,
+				04F28F3719EFB56C00613E4C /* RootViewController.h */,
+				04F28F3819EFB56C00613E4C /* RootViewController.m */,
 				04F28EB519EFB3FA00613E4C /* AppDelegate.h */,
 				04F28EB619EFB3FA00613E4C /* AppDelegate.m */,
-				04F28EBB19EFB3FA00613E4C /* ViewController.h */,
-				04F28EBC19EFB3FA00613E4C /* ViewController.m */,
-				04F28EBE19EFB3FA00613E4C /* Main.storyboard */,
 				04F28EC119EFB3FA00613E4C /* Images.xcassets */,
-				04F28EC319EFB3FA00613E4C /* LaunchScreen.xib */,
 				04F28EB819EFB3FA00613E4C /* NewUPNP.xcdatamodeld */,
 				04F28EB119EFB3FA00613E4C /* Supporting Files */,
 			);
@@ -120,6 +207,128 @@
 				04F28ECF19EFB3FB00613E4C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04F28EDA19EFB4EF00613E4C /* upnp */ = {
+			isa = PBXGroup;
+			children = (
+				04F28F3E19EFB6CE00613E4C /* upnpLib */,
+				04F28EFC19EFB4FE00613E4C /* SSDPLib */,
+				04F28F3C19EFB62C00613E4C /* Player */,
+				04F28F3B19EFB5DF00613E4C /* Mode */,
+				04F28F3A19EFB59800613E4C /* Helper */,
+			);
+			name = upnp;
+			sourceTree = "<group>";
+		};
+		04F28EFC19EFB4FE00613E4C /* SSDPLib */ = {
+			isa = PBXGroup;
+			children = (
+				04F28F0119EFB4FE00613E4C /* SSDP.h */,
+				04F28F0219EFB4FE00613E4C /* SSDP.m */,
+				04F28F0319EFB4FE00613E4C /* SSDPDeviceSearch.h */,
+				04F28F0419EFB4FE00613E4C /* SSDPDeviceSearch.m */,
+				04F28F0519EFB4FE00613E4C /* XMLDictionary.h */,
+				04F28F0619EFB4FE00613E4C /* XMLDictionary.m */,
+			);
+			path = SSDPLib;
+			sourceTree = "<group>";
+		};
+		04F28F2919EFB50A00613E4C /* ThirdPartLib */ = {
+			isa = PBXGroup;
+			children = (
+				04F28F4119EFBC9E00613E4C /* VDefines.h */,
+				04F28F2E19EFB53600613E4C /* libffmpeg.a */,
+				04F28F2A19EFB52D00613E4C /* VMediaPlayer.h */,
+				04F28F2B19EFB52D00613E4C /* VMediaPlayerDelegate.h */,
+				04F28F2C19EFB52D00613E4C /* VPlayerManageDef.h */,
+				04F28F2D19EFB52D00613E4C /* VSingleton.h */,
+			);
+			name = ThirdPartLib;
+			sourceTree = "<group>";
+		};
+		04F28F3A19EFB59800613E4C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				04F28F3419EFB54C00613E4C /* LocalIpodAudio.h */,
+				04F28EDB19EFB4FE00613E4C /* LocalIpodAudio.m */,
+				04F28F3219EFB54C00613E4C /* CommonHelperManager.h */,
+				04F28F3319EFB54C00613E4C /* CommonHelperManager.m */,
+				04F28F0B19EFB4FE00613E4C /* UpnpHelper.h */,
+				04F28F0C19EFB4FE00613E4C /* UpnpHelper.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		04F28F3B19EFB5DF00613E4C /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+				04F28EF819EFB4FE00613E4C /* SOKVMode.h */,
+				04F28EF919EFB4FE00613E4C /* SOKVMode.m */,
+				04F28EED19EFB4FE00613E4C /* SOAlbum.h */,
+				04F28EEE19EFB4FE00613E4C /* SOAlbum.m */,
+				04F28EEF19EFB4FE00613E4C /* SOArtist.h */,
+				04F28EF019EFB4FE00613E4C /* SOArtist.m */,
+				04F28EF119EFB4FE00613E4C /* SOAudio.h */,
+				04F28EF219EFB4FE00613E4C /* SOAudio.m */,
+				04F28EE319EFB4FE00613E4C /* PositionInfo.h */,
+				04F28EE419EFB4FE00613E4C /* PositionInfo.m */,
+				04F28EDF19EFB4FE00613E4C /* PlayAudio.h */,
+				04F28EE019EFB4FE00613E4C /* PlayAudio.m */,
+			);
+			name = Mode;
+			sourceTree = "<group>";
+		};
+		04F28F3C19EFB62C00613E4C /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				04F28F3D19EFB68D00613E4C /* LocalPlayer */,
+				04F28EE119EFB4FE00613E4C /* PlayList.h */,
+				04F28EE219EFB4FE00613E4C /* PlayList.m */,
+				04F28EE519EFB4FE00613E4C /* RemotePlay.h */,
+				04F28EE619EFB4FE00613E4C /* RemotePlay.m */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+		04F28F3D19EFB68D00613E4C /* LocalPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				04F28EF319EFB4FE00613E4C /* SOAudioPlayer.h */,
+				04F28EF419EFB4FE00613E4C /* SOAudioPlayer.m */,
+				04F28EF519EFB4FE00613E4C /* SOAVPlayer.h */,
+				04F28EF619EFB4FE00613E4C /* SOAVPlayer.m */,
+				04F28EFA19EFB4FE00613E4C /* SOVMediaPlayer.h */,
+				04F28EFB19EFB4FE00613E4C /* SOVMediaPlayer.m */,
+				04F28EDC19EFB4FE00613E4C /* LocalPlay.h */,
+				04F28EDD19EFB4FE00613E4C /* LocalPlay.m */,
+			);
+			name = LocalPlayer;
+			sourceTree = "<group>";
+		};
+		04F28F3E19EFB6CE00613E4C /* upnpLib */ = {
+			isa = PBXGroup;
+			children = (
+				04F28EE719EFB4FE00613E4C /* RemoteServer.h */,
+				04F28EE819EFB4FE00613E4C /* RemoteServer.m */,
+				04F28EFD19EFB4FE00613E4C /* DeviceRender.h */,
+				04F28EFE19EFB4FE00613E4C /* DeviceRender.m */,
+				04F28EFF19EFB4FE00613E4C /* DeviceService.h */,
+				04F28F0019EFB4FE00613E4C /* DeviceService.m */,
+				04F28F3019EFB54C00613E4C /* AVTansport.h */,
+				04F28F3119EFB54C00613E4C /* AVTansport.m */,
+				04F28EE919EFB4FE00613E4C /* RenderingControl.h */,
+				04F28EEA19EFB4FE00613E4C /* RenderingControl.m */,
+				04F28EEB19EFB4FE00613E4C /* ServiceContent.h */,
+				04F28EEC19EFB4FE00613E4C /* ServiceContent.m */,
+				04F28F0719EFB4FE00613E4C /* upnpAction.h */,
+				04F28F0819EFB4FE00613E4C /* upnpAction.m */,
+				04F28F0919EFB4FE00613E4C /* upnpDeviceManager.h */,
+				04F28F0A19EFB4FE00613E4C /* upnpDeviceManager.m */,
+				04F28F0D19EFB4FE00613E4C /* upnpServiceInfo.h */,
+				04F28F0E19EFB4FE00613E4C /* upnpServiceInfo.m */,
+			);
+			name = upnpLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +411,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F28EC019EFB3FA00613E4C /* Main.storyboard in Resources */,
-				04F28EC519EFB3FA00613E4C /* LaunchScreen.xib in Resources */,
 				04F28EC219EFB3FA00613E4C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,10 +429,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F28F0F19EFB4FE00613E4C /* LocalIpodAudio.m in Sources */,
+				04F28F3519EFB54C00613E4C /* AVTansport.m in Sources */,
+				04F28F1619EFB4FE00613E4C /* RemoteServer.m in Sources */,
+				04F28F3619EFB54C00613E4C /* CommonHelperManager.m in Sources */,
+				04F28F2519EFB4FE00613E4C /* upnpAction.m in Sources */,
+				04F28F1419EFB4FE00613E4C /* PositionInfo.m in Sources */,
+				04F28F1019EFB4FE00613E4C /* LocalPlay.m in Sources */,
+				04F28F1F19EFB4FE00613E4C /* SOVMediaPlayer.m in Sources */,
+				04F28F1719EFB4FE00613E4C /* RenderingControl.m in Sources */,
+				04F28F1A19EFB4FE00613E4C /* SOArtist.m in Sources */,
+				04F28F2819EFB4FE00613E4C /* upnpServiceInfo.m in Sources */,
+				04F28F2219EFB4FE00613E4C /* SSDP.m in Sources */,
 				04F28EBA19EFB3FA00613E4C /* NewUPNP.xcdatamodeld in Sources */,
+				04F28F2019EFB4FE00613E4C /* DeviceRender.m in Sources */,
+				04F28F1819EFB4FE00613E4C /* ServiceContent.m in Sources */,
+				04F28F1B19EFB4FE00613E4C /* SOAudio.m in Sources */,
+				04F28F1919EFB4FE00613E4C /* SOAlbum.m in Sources */,
 				04F28EB719EFB3FA00613E4C /* AppDelegate.m in Sources */,
-				04F28EBD19EFB3FA00613E4C /* ViewController.m in Sources */,
+				04F28F3919EFB56C00613E4C /* RootViewController.m in Sources */,
+				04F28F1C19EFB4FE00613E4C /* SOAudioPlayer.m in Sources */,
+				04F28F2619EFB4FE00613E4C /* upnpDeviceManager.m in Sources */,
+				04F28F2419EFB4FE00613E4C /* XMLDictionary.m in Sources */,
+				04F28F1D19EFB4FE00613E4C /* SOAVPlayer.m in Sources */,
+				04F28F1E19EFB4FE00613E4C /* SOKVMode.m in Sources */,
+				04F28F1219EFB4FE00613E4C /* PlayAudio.m in Sources */,
+				04F28F2719EFB4FE00613E4C /* UpnpHelper.m in Sources */,
 				04F28EB419EFB3FA00613E4C /* main.m in Sources */,
+				04F28F1319EFB4FE00613E4C /* PlayList.m in Sources */,
+				04F28F2319EFB4FE00613E4C /* SSDPDeviceSearch.m in Sources */,
+				04F28F1519EFB4FE00613E4C /* RemotePlay.m in Sources */,
+				04F28F2119EFB4FE00613E4C /* DeviceService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,25 +480,6 @@
 			targetProxy = 04F28ECB19EFB3FB00613E4C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		04F28EBE19EFB3FA00613E4C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04F28EBF19EFB3FA00613E4C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		04F28EC319EFB3FA00613E4C /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04F28EC419EFB3FA00613E4C /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		04F28ED219EFB3FB00613E4C /* Debug */ = {
@@ -347,8 +562,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = NewUPNP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -357,8 +580,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = NewUPNP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
