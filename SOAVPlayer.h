@@ -12,6 +12,7 @@
 @interface SOAVPlayer : NSObject
 @property (strong, nonatomic) SOAudioPlayer* avplayer;
 
+//播放
 - (void)play;
 //播放器暂停
 - (void)pause;
@@ -23,7 +24,6 @@
 - (NSInteger)vacurrent_times;
 - (void)setVolume:(float)volume;
 - (float)volume;
-
 //设置拖拽进度条功能。
 - (void)setSeekTime:(float)seektimes;
 - (NSString*)durationTime;

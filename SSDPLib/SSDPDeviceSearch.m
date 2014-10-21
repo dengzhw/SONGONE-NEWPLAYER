@@ -10,7 +10,8 @@
 #import <SystemConfiguration/CaptiveNetwork.h>
 #import "SODefine.h"
 @implementation SSDPDeviceSearch {
-    SSDP* ssdp;
+    UpnpSSDP* renderSSDP;
+    UpnpSSDP* serverSSDP;
     NSMutableDictionary* msDict;
     NSMutableDictionary* mrDict;
     NSString* wifiSSID;
@@ -45,23 +46,45 @@
 {
     searchTimes = 0;
     if (!searchThread) {
+        [renderSSDP stopScanning];
+        [serverSSDP stopScanning];
         searchThread = [[NSThread alloc] initWithTarget:self selector:@selector(searchThreadSSID) object:nil];
         [searchThread start];
     }
 }
 - (void)searchThreadSSID
 {
-    while (1) {
-        if (searchTimes > 12) {
-            continue;
+    while (YES) {
+        if (searchTimes > 3) {
+            if (renderSSDP) {
+                [renderSSDP stopScanning];
+                renderSSDP = nil;
+            }
+            if (serverSSDP) {
+                [serverSSDP stopScanning];
+                serverSSDP = nil;
+            }
+            if (searchThread) {
+                [searchThread cancel];
+            }
+            if ([searchThread isCancelled]) {
+                searchThread = nil;
+                [NSThread exit];
+            };
         }
-        if (!ssdp) {
-            ssdp = [[SSDP alloc] init];
+        if (!renderSSDP) {
+            renderSSDP = [[UpnpSSDP alloc] initWidthBrowserType:UPNP_MEDIARENDER];
         }
-        ssdp.delegate = self;
-        [ssdp startScanning];
+        if (!serverSSDP) {
+            serverSSDP = [[UpnpSSDP alloc] initWidthBrowserType:UPNP_MEDIASERVER];
+        }
+        renderSSDP.delegate = self;
+        serverSSDP.delegate = self;
+        [renderSSDP startScannning];
+        sleep(2);
+        [serverSSDP startScannning];
+        sleep(2);
         searchTimes++;
-        usleep(300);
     }
 }
 - (void)clearSSDP

@@ -12,5 +12,6 @@
 #import "SOAlbum.h"
 #import "SOArtist.h"
 @interface LocalIpodAudio : NSObject
++ (NSArray*)getAllCollection;
 
 @end

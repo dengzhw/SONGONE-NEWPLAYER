@@ -21,38 +21,39 @@
     self = [super init];
     if (self) {
         self.controlUrl = controlUrl;
-        //[self httpRequst];
+        upnpaction = [[upnpAction alloc] init];
     }
     return self;
-}
-- (void)httpRequst
-{
-    httpRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:self.controlUrl] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:10.0];
 }
 
 - (void)newAction:(NSString*)actionName
 {
 
-    [self httpRequst];
-    upnpaction = [[upnpAction alloc] initWidthupnpAction:httpRequest ActionName:actionName ControlUrl:self.controlUrl ServiceType:SERVICE_TYPE2];
+    if (upnpaction) {
+        [upnpaction cleanResultAction];
+    }
+    [upnpaction createUpnpActionName:actionName ControlUrl:self.controlUrl ServiceType:SERVICE_TYPE2];
 }
 
 - (float)volume
 {
     @synchronized(self)
     {
-        [self newAction:@"GetVolume"];
-        [upnpaction addParam:@"InstanceID" withValue:@"0"];
-        [upnpaction addParam:@"Channel" withValue:@"Master"];
-        [upnpaction invokeHttpRequest];
-        NSMutableArray* volumeAction = upnpaction.ActionResult;
-        BOOL volumeSuccess = [UpnpHelper ActionStatueIsSucessful:volumeAction];
-        if (volumeSuccess) {
-            NSDictionary* volumeDic = [volumeAction[1] valueForKeyPath:@"s:Body.u:GetVolumeResponse"];
-            NSLog(@"%f", [volumeDic[@"CurrentVolume"] floatValue]);
-            return [volumeDic[@"CurrentVolume"] floatValue];
+        @autoreleasepool
+        {
+            [self newAction:@"GetVolume"];
+            [upnpaction addParam:@"InstanceID" withValue:@"0"];
+            [upnpaction addParam:@"Channel" withValue:@"Master"];
+            [upnpaction invokeHttpRequest];
+            NSMutableArray* volumeAction = upnpaction.ActionResult;
+            BOOL volumeSuccess = [UpnpHelper ActionStatueIsSucessful:volumeAction];
+            if (volumeSuccess) {
+                NSDictionary* volumeDic = [volumeAction[1] valueForKeyPath:@"s:Body.u:GetVolumeResponse"];
+                NSLog(@"%f", [volumeDic[@"CurrentVolume"] floatValue]);
+                return [volumeDic[@"CurrentVolume"] floatValue];
+            }
+            return -1;
         }
-        return -1;
     }
 }
 
@@ -60,12 +61,15 @@
 {
     @synchronized(self)
     {
-        [self newAction:@"SetVolume"];
-        [upnpaction addParam:@"InstanceID" withValue:@"0"];
-        [upnpaction addParam:@"Channel" withValue:@"Master"];
-        [upnpaction addParam:@"DesiredVolume" withValue:[NSString stringWithFormat:@"%d", volume]];
-        [upnpaction invokeHttpRequest];
-        return [UpnpHelper ActionStatueIsSucessful:upnpaction.ActionResult];
+        @autoreleasepool
+        {
+            [self newAction:@"SetVolume"];
+            [upnpaction addParam:@"InstanceID" withValue:@"0"];
+            [upnpaction addParam:@"Channel" withValue:@"Master"];
+            [upnpaction addParam:@"DesiredVolume" withValue:[NSString stringWithFormat:@"%d", volume]];
+            [upnpaction invokeHttpRequest];
+            return [UpnpHelper ActionStatueIsSucessful:upnpaction.ActionResult];
+        }
     }
     return NO;
 }

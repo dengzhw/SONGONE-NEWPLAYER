@@ -298,6 +298,26 @@
     }
     return datestr;
 }
++ (NSInteger)dateStringToInt:(NSString*)datastr
+{
+    NSInteger hours;
+    NSInteger minis;
+    NSInteger secs;
+    NSInteger secondes;
+    if (![datastr isKindOfClass:[NSString class]] || datastr == nil || datastr.length < 8) {
+        NSLog(@"返回时间字符串出错!");
+        return 0;
+    }
+    NSArray* array = [datastr componentsSeparatedByString:@":"];
+    if ([array count] >= 3) {
+        hours = [array[0] integerValue];
+        minis = [array[1] integerValue];
+        secs = [array[2] integerValue];
+        return secondes = hours * 3600 + minis * 60 + secs;
+    }
+    return 0;
+}
+
 #pragma mark--
 #pragma mark UIColor extern
 + (UIColor*)colorFromHexCode:(NSString*)hexString
@@ -816,6 +836,5 @@
     }
     return cache;
 }
-
 
 @end

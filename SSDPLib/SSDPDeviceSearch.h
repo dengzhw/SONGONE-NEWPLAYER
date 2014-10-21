@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SSDP.h"
+#import "UpnpSSDP.h"
 #import "DeviceRender.h"
 #import "DeviceService.h"
 #import "upnpDeviceManager.h"
+#define UPNP_MEDIASERVER @"urn:schemas-upnp-org:device:MediaServer:1"
+#define UPNP_MEDIARENDER @"urn:schemas-upnp-org:device:MediaRenderer:1"
 
 @protocol SSDPDeviceSearchDelegate <NSObject>
 @optional
@@ -23,7 +25,7 @@
 
 @interface SSDPDeviceSearch : NSObject <SSDPDelegate>
 @property (strong, nonatomic) id<SSDPDeviceSearchDelegate> delegate;
-@property (strong,nonatomic) upnpDeviceManager *upnpDevice;
+@property (strong, nonatomic) upnpDeviceManager* upnpDevice;
 + (SSDPDeviceSearch*)shareDistance;
 
 - (void)startSSDP;

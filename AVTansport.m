@@ -22,21 +22,18 @@
     self = [super init];
     if (self) {
         self.controlUrl = controlUrl;
-        //[self httpRequst];
+        position = [[PositionInfo alloc] init];
+        upnpaction = [[upnpAction alloc] init];
     }
     return self;
 }
 
-- (void)httpRequst
-{
-    httpRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:self.controlUrl] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:10.0];
-}
-
 - (void)newAction:(NSString*)actionName
 {
-
-    [self httpRequst];
-    upnpaction = [[upnpAction alloc] initWidthupnpAction:httpRequest ActionName:actionName ControlUrl:self.controlUrl ServiceType:SERVICE_TYPE1];
+    if (upnpaction) {
+        [upnpaction cleanResultAction];
+    }
+    [upnpaction createUpnpActionName:actionName ControlUrl:self.controlUrl ServiceType:SERVICE_TYPE1];
 }
 
 - (PositionInfo*)getPositionInfo
@@ -49,7 +46,7 @@
         BOOL positionSuccess = [UpnpHelper ActionStatueIsSucessful:positionAction];
         if (positionSuccess) {
             NSDictionary* positionDic = [positionAction[1] valueForKeyPath:@"s:Body.u:GetPositionInfoResponse"];
-            position = [[PositionInfo alloc] initPositionInfo:[positionDic valueForKey:@"RelTime"] TrackTime:[positionDic valueForKey:@"TrackDuration"] TrackURI:[positionDic valueForKey:@"TrackURI"]];
+            [position createPosintionRelTime:[positionDic valueForKey:@"RelTime"] TrackTime:[positionDic valueForKey:@"TrackDuration"] TrackURI:[positionDic valueForKey:@"TrackURI"]];
             return position;
         }
         return position;
@@ -70,13 +67,22 @@
     }
 }
 
-- (NSMutableArray*)getTransportInfo
+- (NSString*)getTransportInfo
 {
     @synchronized(self)
     {
-        [self newAction:@"GetTransportInfo"];
-        [upnpaction invokeHttpRequest];
-        return upnpaction.ActionResult;
+        @autoreleasepool
+        {
+            [self newAction:@"GetTransportInfo"];
+            [upnpaction invokeHttpRequest];
+            NSMutableArray* transportAction = upnpaction.ActionResult;
+            BOOL TransportInfoSuccess = [UpnpHelper ActionStatueIsSucessful:transportAction];
+            if (TransportInfoSuccess) {
+                NSDictionary* transportDic = [transportAction[1] valueForKeyPath:@"s:Body.u:GetTransportInfoResponse"];
+                return [transportDic valueForKey:@"CurrentTransportState"];
+            }
+            return @"";
+        }
     }
 }
 
@@ -96,9 +102,25 @@
 {
     @synchronized(self)
     {
-        [self newAction:@"Pause"];
-        [upnpaction invokeHttpRequest];
-        return [UpnpHelper ActionStatueIsSucessful:upnpaction.ActionResult];
+        @autoreleasepool
+        {
+            [self newAction:@"Pause"];
+            [upnpaction invokeHttpRequest];
+            return [UpnpHelper ActionStatueIsSucessful:upnpaction.ActionResult];
+        }
+    }
+}
+- (BOOL)stop
+{
+    @synchronized(self)
+    {
+        @autoreleasepool
+        {
+            [self newAction:@"Stop"];
+            [upnpaction addParam:@"InstanceID" withValue:@"0"];
+            [upnpaction invokeHttpRequest];
+            return [UpnpHelper ActionStatueIsSucessful:upnpaction.ActionResult];
+        }
     }
 }
 
@@ -106,11 +128,14 @@
 {
     @synchronized(self)
     {
-        [self newAction:@"Seek"];
-        [upnpaction addParam:@"Target" withValue:[UpnpHelper makeDataToString:pos]];
-        [upnpaction addParam:@"Unit" withValue:@"REL_TIME"];
-        [upnpaction invokeHttpRequest];
-        return [UpnpHelper ActionStatueIsSucessful:upnpaction.ActionResult];
+        @autoreleasepool
+        {
+            [self newAction:@"Seek"];
+            [upnpaction addParam:@"Target" withValue:[UpnpHelper makeDataToString:pos]];
+            [upnpaction addParam:@"Unit" withValue:@"REL_TIME"];
+            [upnpaction invokeHttpRequest];
+            return [UpnpHelper ActionStatueIsSucessful:upnpaction.ActionResult];
+        }
     }
 }
 

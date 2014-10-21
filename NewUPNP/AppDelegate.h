@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "HttpServerManager.h"
+
 #import "RootViewController.h"
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

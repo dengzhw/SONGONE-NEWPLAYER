@@ -18,7 +18,7 @@
     self = [super init];
     if (self) {
         self.currentAudio = [[SOAudio alloc] init];
-        self.currentAudio.play_uri = @"http://qzone.haoduoge.com/music/C49CFN5RPXA4899AD79ADBB0B4714AA4529FC.mp3";
+        //self.currentAudio.play_uri = @"http://qzone.haoduoge.com/music/C49CFN5RPXA4899AD79ADBB0B4714AA4529FC.mp3";
         //self.currentAudio.play_uri = @"http://cherrytime.oss-cn-hangzhou.aliyuncs.com/cherrytime乐库/上下班/打鸡血/独立摇滚%20要的就是个态度/01%20-%20万能青年旅店%20-%20乌云典当记.mp3?Expires=1414282665&OSSAccessKeyId=ndm6c0zcwyz1x6n5hqe66rig&Signature=ffcCuC6dT8yIqvpwbzMY0xFcBDk%3D";
         self.playMode = mode;
     }
@@ -34,7 +34,25 @@
         return NO;
     }
 }
+- (BOOL)setPlayerCurrentAudio:(SOAudio*)audio
+{
+    self.currentAudio = audio;
+    return [self findIndexByAudio:self.currentAudio];
+}
 
+- (BOOL)findIndexByAudio:(SOAudio*)audio
+{
+    NSInteger count = 0;
+    for (SOAudio* audios in self.audioQueu) {
+        if ([audios.title isEqualToString:audio.title] &&
+            [audios.play_uri isEqualToString:audio.play_uri]) {
+            self.currentIndex = count;
+            return YES;
+        }
+        count++;
+    }
+    return NO;
+}
 - (void)OnPrevious
 {
     if (self.audioQueu == nil || self.audioQueu.count <= 0) {

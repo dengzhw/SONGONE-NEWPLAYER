@@ -101,9 +101,6 @@ static SOAudioPlayer* singleInstance = nil;
     //[self monitorPlayerProgress];
     return self;
 }
-//-(void)addPlayURL:(NSString *)url{
-//    self.playURL=url;
-//}
 - (void)addPlayAudio:(SOAudio*)audio
 {
     self.playAudio = audio;
@@ -115,7 +112,6 @@ static SOAudioPlayer* singleInstance = nil;
     _isPlaying = YES;
     [_avPlayer play];
     //_avPlayer.actionAtItemEnd = AVPlayerActionAtItemEndNone;
-
     //[[NSNotificationCenter defaultCenter]
     //postNotificationName:@"AudioPlayerStautsPlay" object:nil];
 }
@@ -194,11 +190,6 @@ static SOAudioPlayer* singleInstance = nil;
         } else {
             murl = [NSURL URLWithString:url];
         }
-        //        NSString *musicPath = [[NSBundle mainBundle]
-        //        pathForResource:@"aaaa" ofType:@"mp3"];
-        //
-        //        murl = [NSURL fileURLWithPath:musicPath];
-
         dispatch_async(dispatch_get_main_queue(), ^{
         AVPlayerItem *avitem = [AVPlayerItem playerItemWithURL:murl];
         //            [_avPlayer replaceCurrentItemWithPlayerItem:avitem];

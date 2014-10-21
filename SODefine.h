@@ -19,9 +19,17 @@
 #define SERVICE_TYPE1 @"urn:schemas-upnp-org:service:AVTransport:1"
 #define SERVICE_TYPE2 @"urn:schemas-upnp-org:service:RenderingControl:1"
 #define SERVICE_TYPE3 @"urn:schemas-upnp-org:service:ContentDirectory:1"
-
+//播放状态
+#define BOXPLAYERMODEPLAY @"BOXPLAYERMODEPLAY"
+#define BOXPLAYERMODESTOP @"BOXPLAYERMODESTOP"
+#define BOXPLAYERMODEPAUSE @"BOXPLAYERMODEPAUSE"
+#define BOXPLAYERMODEBEFORE @"BOXPLAYERMODEBEFORE"
+#define BOXPLAYERMODEERROR @"BOXPLAYERMODEERROR"
+#define BOXPLAYERMODEREPLACE @"BOXPLAYERMODEREPLACE"
 //http返回的状态码
 #define STATUSCODE @"statusCode"
-
+//定义全局app代理
+#define APP (AppDelegate*)[UIApplication sharedApplication].delegate
+#define GLOBALDISPATCHQUEUE dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
 #endif

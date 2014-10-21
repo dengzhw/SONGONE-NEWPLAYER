@@ -13,10 +13,11 @@
 @property (strong, nonatomic) NSMutableArray* audioQueu;
 @property (strong, nonatomic) SOAudio* currentAudio;
 @property (assign, nonatomic) NSInteger currentIndex;
-@property (assign,nonatomic) NSInteger playMode;
+@property (assign, nonatomic) NSInteger playMode;
 
 - (id)initWidthMode:(NSInteger)mode;
 - (void)OnPrevious;
 - (void)OnNext;
 - (BOOL)setAudioList:(NSArray*)audioList;
+- (BOOL)setPlayerCurrentAudio:(SOAudio*)audio;
 @end

@@ -4,7 +4,7 @@
 //
 //  Created by mac on 14-10-11.
 //  Copyright (c) 2014年 xiaoran. All rights reserved.
-//
+//获取所有的设备列表
 
 #import "upnpDeviceManager.h"
 #import "SODefine.h"

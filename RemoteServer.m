@@ -30,7 +30,7 @@
         }
     }
 }
-
+//获取音箱的sdcard数据或u盘数据
 - (NSArray*)browseDirectChildren:(NSString*)rObjectId requestedCount:(NSUInteger)rcount requestedStartIndex:(NSUInteger)rstartIndex
 {
     return [self.servercontent browseDirectChildren:rObjectId requestedCount:rcount requestedStartIndex:rstartIndex];

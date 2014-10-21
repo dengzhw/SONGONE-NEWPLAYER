@@ -19,5 +19,6 @@
 - (NSString*)getTransportInfo;
 - (BOOL)setAVTransportURI:(NSString*)uri;
 - (PositionInfo*)getPositionInfo;
+- (BOOL)stop;
 
 @end

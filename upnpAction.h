@@ -19,8 +19,9 @@
 @property (strong, nonatomic) NSString* serviceType;
 @property (strong, nonatomic) NSMutableArray* ActionResult;
 
-- (id)initWidthupnpAction:(NSMutableURLRequest*)httpClient ActionName:(NSString*)actionName ControlUrl:(NSString*)controlUrl ServiceType:(NSString*)serviceType;
+- (void)createUpnpActionName:(NSString*)actionName ControlUrl:(NSString*)controlUrl ServiceType:(NSString*)serviceType;
 - (void)addParam:(NSString*)key withValue:(NSString*)value;
 - (void)invokeHttpRequest;
+- (void)cleanResultAction;
 
 @end

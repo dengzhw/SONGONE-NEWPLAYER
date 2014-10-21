@@ -12,11 +12,17 @@
 
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate {
+    HttpServerManager* _httpServerManager;
+}
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
     // Override point for customization after application launch.
+    //开起本地服务器，用于推送ipod歌曲和doucment目录下的歌曲
+    _httpServerManager = [[HttpServerManager alloc] init];
+    [_httpServerManager initHttpServerPara];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     RootViewController* rootCtl = [[RootViewController alloc] init];
     self.window.rootViewController = rootCtl;

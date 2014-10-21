@@ -15,6 +15,7 @@
 @property (strong, nonatomic) ServiceContent* servercontent;
 
 - (id)initWithServer:(DeviceService*)server;
+//获取音箱的sdcard数据或u盘数据
 - (NSArray*)browseDirectChildren:(NSString*)rObjectId requestedCount:(NSUInteger)rcount requestedStartIndex:(NSUInteger)rstartIndex;
 
 @end

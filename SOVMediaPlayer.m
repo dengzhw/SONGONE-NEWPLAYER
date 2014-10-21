@@ -13,7 +13,7 @@
     NSInteger repeattimes;
 }
 
-static SOVMediaPlayer* singleInstance = nil;
+/*static SOVMediaPlayer* singleInstance = nil;
 
 - (id)init
 {
@@ -176,5 +176,6 @@ static SOVMediaPlayer* singleInstance = nil;
         });
     });
 }
+ */
 
 @end
