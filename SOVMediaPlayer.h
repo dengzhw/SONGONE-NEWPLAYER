@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 //#import "ProtocolManager.h"
-//#import "VMediaPlayer.h"
+#import "VMediaPlayer.h"
 #import "SOAudio.h"
 
-@interface SOVMediaPlayer : NSObject
-//<VMediaPlayerDelegate>
-//@property (strong, nonatomic) VMediaPlayer* vmediaplayer;
+@interface SOVMediaPlayer : NSObject <VMediaPlayerDelegate>
+
+@property (strong, nonatomic) VMediaPlayer* vmediaplayer;
 //@property (strong, nonatomic) id<SO_BoxPlayerDelegate> delegate;
 
 /*- (void)addToVMediaPlayer:(SOAudio*)audio;

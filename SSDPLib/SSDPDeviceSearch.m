@@ -66,11 +66,11 @@
             }
             if (searchThread) {
                 [searchThread cancel];
+                if ([searchThread isCancelled]) {
+                    searchThread = nil;
+                    [NSThread exit];
+                };
             }
-            if ([searchThread isCancelled]) {
-                searchThread = nil;
-                [NSThread exit];
-            };
         }
         if (!renderSSDP) {
             renderSSDP = [[UpnpSSDP alloc] initWidthBrowserType:UPNP_MEDIARENDER];
